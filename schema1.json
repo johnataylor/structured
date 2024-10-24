@@ -1,0 +1,24 @@
+{
+  "name": "address",
+  "strict": true,
+  "description": "A postal address",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "street": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "zip": {
+        "type": "string"
+      },
+      "state": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "required": [ "street", "city", "zip", "state" ]
+  }
+}

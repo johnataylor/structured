@@ -1,0 +1,15 @@
+{
+  "name": "structured",
+  "version": "1.0.0",
+  "description": "Investigate structured output",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.68.4"
+  }
+}
