@@ -16,9 +16,12 @@
       },
       "state": {
         "type": "string"
+      },
+      "country": {
+        "type": [ "string", "null" ]
       }
     },
     "additionalProperties": false,
-    "required": [ "street", "city", "zip", "state" ]
+    "required": [ "street", "city", "zip", "state", "country" ]
   }
 }

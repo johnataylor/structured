@@ -1,0 +1,38 @@
+{
+  "name": "pageDescription",
+  "strict": true,
+  "description": "A page description",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": [ "string", "null" ]
+      },
+      "pageNumber": {
+        "type": [ "string", "null" ]
+      },
+      "footer": {
+        "type": [ "string", "null" ]
+      },
+      "sections": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "sectionTitle": {
+              "type": [ "string", "null" ]
+            },
+            "content": {
+              "type": [ "string", "null" ],
+              "descrition": "a detailed description of the content"
+            }
+          },
+          "additionalProperties": false,
+          "required": [ "sectionTitle", "content" ]
+        }
+      }
+    },
+    "additionalProperties": false,
+    "required": [ "title", "pageNumber", "footer", "sections" ]
+  }
+}

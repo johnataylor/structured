@@ -12,17 +12,17 @@
         "anyOf": [
           {
             "type": "string",
-            "const": "101",
+            "const": "505101",
             "description": "use this code for size small"
           },
           {
             "type": "string",
-            "const": "102",
+            "const": "789102",
             "description": "use this code for size medium"
           },
           {
             "type": "string",
-            "const": "103",
+            "const": "432103",
             "description": "use this code for size large"
           }
         ]
