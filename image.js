@@ -4,7 +4,7 @@ import fs from 'fs';
 
 const openai = new OpenAI();
 
-function toBase64(filePath) {
+function readFileAsBase64(filePath) {
   const img = fs.readFileSync(filePath);
   return 'data:image/png;base64,' + Buffer.from(img).toString('base64');
 }
@@ -18,8 +18,7 @@ const completion = await openai.beta.chat.completions.parse({
   messages: [
     { role: 'system', content: 'Describe the image using the page description schema.' },
     { role: 'user', content: [
-      //{ type: "text", text: 'Describe the image using the page description schema.' },
-      { type: "image_url", image_url: { url: toBase64(pngFileName) } }
+      { type: "image_url", image_url: { url: readFileAsBase64(pngFileName) } }
     ]},
   ],
   response_format: { type: 'json_schema', json_schema: schema }
